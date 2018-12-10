@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <ul id="menu-items">
+                <li><a href="Clubs.aspx">Clubs</a></li>
+                <li><a href="Results.aspx">Results</a></li>
+                <li><a href="Add Club.aspx">Add Club</a></li>
+                <li><a href="Match Scheduling.aspx">Match Scheduling</a></li>
+                <li><a href="Home.aspx">Home</a></li> 
+            </ul>
+        </div>
+
+    </header>
+    <marquee>
+        <div id="marquee">
+            <p>
+                <h2>
+                    Register Your Club Now
+                </h2>
+            </p>
+        </div>
+    </marquee>
+
+    
+    <form id="form1" runat="server">
+        <asp:LoginStatus ID="LoginStatus1" runat="server" ForeColor="Black"/><br/><br/>
+        <div>
+            <div id="set">
+                    
+                <div id ="sec1">
+                    <marquee>
+                        
+                        <p>
+                            <h3>
+                                <b>
+                                    Fixtures<br/><br/>
+                                </b>
+                            </h3>
+                        </p></marquee> 
+
+                   <center> <asp:Label ID="print_matches" runat="server" Text=" "></asp:Label> </center>
+                </div>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"> 
+                    
+                </asp:ContentPlaceHolder>
+                
+            </div>
+        </div>
+    </form>
+    <div id="footer">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+            <p>
+                <center>
+                    Copyright © 2012 Technology Mash
+                ology Mash
+                </center>
+            </p>
+
+    </div>
+</body>
+</html>
